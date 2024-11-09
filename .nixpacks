@@ -1,0 +1,17 @@
+providers:
+  - node
+
+phases:
+  setup:
+    nixPkgs:
+      - nodejs@18
+      - npm@9
+  
+  install:
+    command: npm install
+
+  build:
+    command: npm run build
+
+start:
+  command: npm start
